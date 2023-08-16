@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="open">
+        <h2>Modal Login From</h2>
+        <button id="openBtn" onclick="showForm()">Login </button>
+    </div>
+
+    <div class="main" id="form">
+        <h2>Login Form</h2>
+        <form class="card">
+            <img src="Avtar.png" id="avtar">
+            <div class="info">
+                <label for="username">Username :</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <label for="password">Password :</label>
+                <input type="text" id="password" placeholder="Enter Password">
+                <button id="loginBtn" type="submit">Login</button>
+                <div class="rememberMeCard">
+                    <input type="checkbox" id="rememberMe"> <label for="rememberMe">Remember Me</label>
+                </div>
+            </div>
+            <div class="cancelCard">
+                <button id="cancelBtn">Cancel</button>
+                <p>Forgot<a href="#"> Password ?</a></p>
+            </div>
+        </form>
+        <i class="fa-solid fa-xmark" id="closeBtn" onclick="closeFrom()"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
